@@ -1,14 +1,12 @@
- 
+import { useState } from "react"; 
+import Contador from "./components/Contador/ContadorFunction";
+import Input from "./components/InputFunction/Input";
 const App = () => {
-    const handleButtonClick = () => {
-      alert("O botão foi clicado!");
-    };
-
-
   return (
-    <div>
-        <button onClick={handleButtonClick/*() => {alert("botão clicado")}*/}>Clique aqui</button>
-    </div>
+    <>
+      <Contador/>
+      <Input/>
+    </>
     
 
   );
