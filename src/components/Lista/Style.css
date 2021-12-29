@@ -1,0 +1,17 @@
+.list-ex1{
+    list-style: none;
+    width: max-content;
+
+    
+}
+.list-item1{
+    background-color: aqua;
+    border: 1px solid black;
+    text-align: center;
+    padding: 3px;
+    transition: .3s;
+}
+.list-item1:hover{
+    background-color: blueviolet;
+    transform: translateY(-5px);
+}
