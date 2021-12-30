@@ -26,8 +26,9 @@ const ListRender = () => {
   ];
   return (
     <>
-      <h2>Exibição de lista</h2>
-      <div>
+      <hr />
+      <div className="cont-format input">
+        <h2>Exibição de lista</h2>
         <ul className="list-ex1">
           {list.map((item, key) => (
             <li className="list-item1" key={key}>{`${item.name} - ${item.age} anos`}</li>

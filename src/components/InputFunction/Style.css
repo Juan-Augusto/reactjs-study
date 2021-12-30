@@ -8,6 +8,10 @@ h2{
     margin: 5px;
 
 }
+.input{
+    align-items: center;
+    flex-direction: column;
+}
 input{
     background-color: aquamarine;
     transition: .3s;

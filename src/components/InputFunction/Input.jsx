@@ -18,7 +18,7 @@ const Input = () => {
 
 
     return (
-        <div>
+        <div className="cont-format input">
             <h1>Input para nome:</h1>
             <h2> Nome: </h2>
             <input type="text" value={name} onChange={handleName} placeholder=""/>
