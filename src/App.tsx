@@ -12,11 +12,16 @@ const App = () => {
       <ListRender/>
       <ExhibitionCondition/>
       <StyledCondition/>
-      <Container>
-        <h1>Utilização de Styled Components</h1>
-        <Botao>
-          Texto do botao
+      <Container className="flex flex-col md:flex-row">
+        <span>Utilização de Styled Components com tailwind</span>
+        <Botao className="mt-10">
+          Botão maior
         </Botao>
+        <div className="bg-black mt-10">
+          <Botao small className="font-bold">
+            Botão menor
+          </Botao>
+        </div>
       </Container>
 
     </>
