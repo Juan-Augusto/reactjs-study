@@ -4,6 +4,7 @@ import ListRender from "./components/Lista/List";
 import ExhibitionCondition from "./components/Condicional/Condition";
 import StyledCondition from "./components/EstilizacaoCondicional/StyleWithCondition";
 import { Container, Botao } from "./components/StyledComponents/StyledComponent";
+import EffectUsed from "./components/Effect/Effect";
 const App = () => {
   return (
     <>
@@ -23,6 +24,7 @@ const App = () => {
           </Botao>
         </div>
       </Container>
+      <EffectUsed />
 
     </>
     
