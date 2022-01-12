@@ -5,6 +5,7 @@ import ExhibitionCondition from "./components/Condicional/Condition";
 import StyledCondition from "./components/EstilizacaoCondicional/StyleWithCondition";
 import { Container, Botao } from "./components/StyledComponents/StyledComponent";
 import EffectUsed from "./components/Effect/Effect";
+import MovieRequest from "./components/Request/MoviesRequest";
 const App = () => {
   return (
     <>
@@ -25,6 +26,7 @@ const App = () => {
         </div>
       </Container>
       <EffectUsed />
+      <MovieRequest/>
 
     </>
     
