@@ -13,25 +13,36 @@ const MovieRequest = () => {
     //     .then((json) => {
     //         setMovies(json);
     //     })
+    //      .catch((e) => {
+    //     setLoading(false);
+    //     setMovies([]);
+    //     console.error(e);
+    //      })
     // }
     const loadMovies = async () => {
-        setLoading(true);
-        let response = await fetch('https://api.b7web.com.br/cinema/');
-        let json = await response.json();
-        setLoading(false);
-        setMovies(json);
+        try{
+            setLoading(true);
+            let response = await fetch('https://api.b7web.com.br/cinema/');
+            let json = await response.json();
+            setLoading(false);
+            setMovies(json);
+        }catch(e){
+            setLoading(false);
+            setMovies([]);
+            console.error(e);
+
+        }
     }
     
     return(
         <div>
-
             {loading &&
                 <div>
                     Carregando...
                 </div>
             }
             <div>
-                {!loading &&
+                {!loading && movies.length > 0 &&
                     <div> 
                         total de Filmes: {movies.length} 
                     </div>
@@ -45,6 +56,11 @@ const MovieRequest = () => {
                     </div>
                 ))}
             </div>
+            {!loading && movies.length === 0 &&
+                <div>
+                    <h1>Algo deu errado, tente novamente mais tarde.</h1>
+                </div>
+            }
         </div>
     );
 
