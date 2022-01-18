@@ -6,6 +6,7 @@ import StyledCondition from "./components/EstilizacaoCondicional/StyleWithCondit
 import { Container, Botao } from "./components/StyledComponents/StyledComponent";
 import EffectUsed from "./components/Effect/Effect";
 import MovieRequest from "./components/Request/MoviesRequest";
+import JSONPlaceholder from "./components/JSONPlaceholder/JSONPlaceholder";
 const App = () => {
   return (
     <>
@@ -27,6 +28,7 @@ const App = () => {
       </Container>
       <EffectUsed />
       <MovieRequest/>
+      <JSONPlaceholder/>
 
     </>
     
