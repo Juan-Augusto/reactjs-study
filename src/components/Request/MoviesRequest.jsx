@@ -51,7 +51,7 @@ const MovieRequest = () => {
             <div className="grid grid-cols-6 gap-3">
                 {movies.map((item, index) =>(
                     <div key={index}>
-                        <img src={item.avatar} className="w-32"/>
+                        <img src={item.avatar} className="w-32" alt=""/>
                         {item.titulo}
                     </div>
                 ))}
