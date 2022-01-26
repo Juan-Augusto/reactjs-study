@@ -7,6 +7,7 @@ import { Container, Botao } from "./components/StyledComponents/StyledComponent"
 import EffectUsed from "./components/Effect/Effect";
 import MovieRequest from "./components/Request/MoviesRequest";
 import JSONPlaceholder from "./components/JSONPlaceholder/JSONPlaceholder";
+import Reducer from "./Reducer/ReducerUse";
 const App = () => {
   return (
     <>
@@ -27,8 +28,9 @@ const App = () => {
         </div>
       </Container>
       <EffectUsed />
-      <MovieRequest/>
-      <JSONPlaceholder/>
+      <MovieRequest />
+      <JSONPlaceholder />
+      <Reducer />
 
     </>
     
