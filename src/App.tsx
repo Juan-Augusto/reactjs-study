@@ -9,6 +9,7 @@ import MovieRequest from "./components/Request/MoviesRequest";
 import JSONPlaceholder from "./components/JSONPlaceholder/JSONPlaceholder";
 import Reducer from "./Reducer/ReducerUse";
 const App = () => {
+  const [state, dispatch] = Reducer();
   return (
     <>
       <Contador/>
@@ -30,7 +31,19 @@ const App = () => {
       <EffectUsed />
       <MovieRequest />
       <JSONPlaceholder />
-      <Reducer />
+      <div>
+            <h1>Contagem: {state.count}</h1>
+            <button onClick={() => dispatch({type: 'ADD'})}>
+                Adicionar
+            </button>
+            <button onClick={() =>dispatch({type: 'DEL'})}>
+                Remover
+            </button>
+            <button onClick={() => dispatch({type: 'RESET'})}>
+                Resetar
+            </button>
+        </div>
+    );
 
     </>
     

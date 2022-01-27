@@ -1,6 +1,8 @@
 import { useReducer } from "react";
 
-const initialState = { count: 0 };
+const initialState = { 
+    count: 0 
+};
 const reducerFunction = (state, action) => {
     switch(action.type){
         case 'ADD':
@@ -19,21 +21,8 @@ const reducerFunction = (state, action) => {
 }
 
 const Reducer = () => {
-    const [state, dispatch] = useReducer(reducerFunction, initialState);
-    return (
-        <div>
-            <h1>Contagem: {state.count}</h1>
-            <button onClick={() => dispatch({type: 'ADD'})}>
-                Adicionar
-            </button>
-            <button onClick={() =>dispatch({type: 'DEL'})}>
-                Remover
-            </button>
-            <button onClick={() => dispatch({type: 'RESET'})}>
-                Resetar
-            </button>
-        </div>
-    );
+    return useReducer(reducerFunction, initialState);
+        
 };
 
 export default Reducer; 
