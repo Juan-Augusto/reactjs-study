@@ -6,7 +6,7 @@ const initialState = {
 const reducerFunction = (state, action) => {
     switch(action.type){
         case 'ADD':
-            return {...state, count: state.count + 1};
+            return ({...state, count: state.count + 1});
         break;
         case 'DEL':
             if(state.count > 0){

@@ -8,8 +8,37 @@ import EffectUsed from "./components/Effect/Effect";
 import MovieRequest from "./components/Request/MoviesRequest";
 import JSONPlaceholder from "./components/JSONPlaceholder/JSONPlaceholder";
 import Reducer from "./Reducer/ReducerUse";
+import usePeopleList  from "./Reducer/peopleList";
+import { useState } from "react";
 const App = () => {
   const [state, dispatch] = Reducer();
+
+  const [list, dispatchList] = usePeopleList();
+  const [nameInput, setNameInput] = useState('');
+  const handleAddButton = () => {
+      if(nameInput){
+          dispatchList({
+            type: 'ADD',
+            payload: {
+              name: nameInput
+            }
+          })
+      }
+  }
+  const handleInputChange = (e: ChangeEvent<HTMLInputElement>) =>{
+      setNameInput(e.target.value);
+  }
+  const deletePerson = (id) => {
+    dispatchList({
+      type: 'DEL',
+      payload: { id }
+    });
+  }
+  const handleOrderButton = () => {
+    dispatchList({
+      type: 'ORDER'
+    })
+  }
   return (
     <>
       <Contador/>
@@ -43,8 +72,20 @@ const App = () => {
                 Resetar
             </button>
         </div>
-    );
-
+      <div>
+        <h1>Lista de pessoas</h1>
+        <input type="text" value={nameInput} onChange={(handleInputChange)}/>
+        <button onClick={handleAddButton}>Adicionar</button>
+        <button onClick={handleOrderButton}>Ordenar</button>
+      </div>
+      <ul>
+        {list.map((item, index) => (
+          <li key={index}>
+            {item.name}
+            <button onClick={() => deletePerson(item.id)}>DELETAR</button>
+          </li>
+        ))}
+      </ul>
     </>
     
 

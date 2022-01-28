@@ -5,23 +5,34 @@ const initialState = [];
 const reducerList = (state, action) => {
     switch(action.type){
         case 'ADD':
-            state.push({
-                id: uuidv4(),
-                name: action.payload?.name
-            });
+            if(action.payload?.name){
+                const newState = [...state]
+                state.push({
+                    id: uuidv4(),
+                    name: action.payload?.name
+                });
+                return newState;
+            }
         break;
         case 'DEL':
             if(action.payload?.id){
-                state = state.filter(item => item.id !==action.payload?.id);
+                let newState = [...state];
+                newState = newState.filter(item => item.id !==action.payload?.id);
+                return newState;
             }
         break;
         case 'ORDER':
+            let newState = [...state];
             state = state.sort((a, b) => (a.name > b.name) ? 1 : -1);
+            return newState;
         break;
     }
     return state;
 }
-export const usePeopleList = () => {
 
+const usePeopleList = () => {
+
+    return (useReducer(reducerList, initialState));
 
 }
+export default usePeopleList;
