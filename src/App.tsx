@@ -1,14 +1,13 @@
+import { Routes, Route } from "react-router-dom";
 import Contador from "./components/Contador/ContadorFunction";
 import Input from "./components/InputFunction/Input";
 import ListRender from "./components/Lista/List";
 import ExhibitionCondition from "./components/Condicional/Condition";
 import StyledCondition from "./components/EstilizacaoCondicional/StyleWithCondition";
-
 import EffectUsed from "./components/Effect/Effect";
 import MovieRequest from "./components/Request/MoviesRequest";
 import JSONPlaceholder from "./components/JSONPlaceholder/JSONPlaceholder";
 import ReducerCounter from "./Reducer/ReducerUse";
-import { Routes, Route } from "react-router-dom";
 import PeopleList from "./Reducer/peopleList";
 import TailwindComponent from "./components/ExTailwind/TailwindEx";
 
