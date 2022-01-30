@@ -20,8 +20,8 @@ const EffectUsed = () => {
     
     return (
         <div className="flex flex-col justify-center">
-            <input type="text" placeholder="Digite seu nome" value= { name } onChange={ handleNameChange }/>
-            <input type="text" placeholder="Digite seu sobrenome" value= { lastName } onChange={ handleLastNameChange }/>
+            <input className="p-2" type="text" placeholder="Digite seu nome" value= { name } onChange={ handleNameChange }/>
+            <input className="p-2" type="text" placeholder="Digite seu sobrenome" value= { lastName } onChange={ handleLastNameChange }/>
             <p>Nome completo: { fullName } </p>
         </div>
     );
