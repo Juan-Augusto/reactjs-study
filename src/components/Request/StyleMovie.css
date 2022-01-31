@@ -1,0 +1,11 @@
+.movie-frame{
+    border: 2px solid red;
+    transition: .3s;
+}
+.movie-frame:hover{
+    border: 2px solid blue;
+
+}
+.movie-title{
+    background-color: cornsilk;
+}

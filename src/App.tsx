@@ -10,15 +10,20 @@ import JSONPlaceholder from "./components/JSONPlaceholder/JSONPlaceholder";
 import ReducerCounter from "./Reducer/ReducerUse";
 import PeopleList from "./Reducer/peopleList";
 import TailwindComponent from "./components/ExTailwind/TailwindEx";
-
+import { NotFoundPage404 } from "./components/NotFound/NotFoundPage";
+import { NavbarHeader } from "./components/Header/Header";
+import { Home } from "./components/Home/Home";
+import { Footer } from "./components/Footer/Footer";
 const App = () => {
   return (
-    <>
+    <main>
+      <NavbarHeader />
       <Routes>
-        <Route path="/" element={ <Contador /> } />
-        <Route path='/exercicio-input' element={ <Input /> }/>
-        <Route path='/exercicio-lista' element={ <ListRender /> }/>
-        <Route path="/exercicio-lista-reducer" element={ <PeopleList />}/>
+        <Route path="/" element={ <Home /> } />
+        <Route path="/contador" element={ <Contador /> } />
+        <Route path='/input' element={ <Input /> }/>
+        <Route path='/lista' element={ <ListRender /> }/>
+        <Route path="/lista-reducer" element={ <PeopleList />}/>
         <Route path="/extailwind" element={ <TailwindComponent /> }/>
         <Route path="/exibicao-condicional" element={ <ExhibitionCondition /> }/>
         <Route path="/estilizacao-condicional" element={ <StyledCondition /> }/>
@@ -26,8 +31,10 @@ const App = () => {
         <Route path="/movie-request" element={ <MovieRequest /> }/>
         <Route path="/jsonplaceholder" element={ <JSONPlaceholder /> }/>
         <Route path="/contador-reducer" element={ <ReducerCounter /> }/>
+        <Route path="*" element={<NotFoundPage404 />}/>
       </Routes>
-    </>
+      <Footer/>
+    </main>
   );
 };
 export default App;

@@ -1,0 +1,14 @@
+.card{
+    box-shadow: 5px 5px 10px #A9A9A9;
+    transition: .3s;
+    border: 3px solid red;
+    margin: 3rem;;
+}
+.card:hover{
+    box-shadow: 2px 2px 3px #A9A9A9;
+    border: 3px solid blue;
+
+}
+.main-title{
+    color: #FFFFFF;
+}

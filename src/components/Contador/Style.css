@@ -11,6 +11,11 @@
 
 
 }
+.useState-structure{
+       border: solid 1px black;
+       margin: 16px;
+       font-family: 'Source Code Pro', monospace;
+}
 button {
        margin: 15px;
        padding: .5em .5em;
