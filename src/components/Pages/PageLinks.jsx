@@ -40,8 +40,8 @@ const Links = [
         'link': "contador-reducer" 
     },
     { 
-        'name': "Teste", 
-        'link': "teste" 
+        'name': "Error page", 
+        'link': "error" 
     },
 ]
 export default Links;

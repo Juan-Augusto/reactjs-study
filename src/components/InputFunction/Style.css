@@ -1,21 +1,29 @@
 h1{
     font-size: 35px;
     margin: 5px;
+    font-family: 'Source Code Pro', monospace;
+
 
 }
 h2{
     font-size: 22px;
     margin: 5px;
+    font-family: 'Source Code Pro', monospace;
+
 
 }
 .input{
     align-items: center;
     flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+
 }
 input{
-    background-color: aquamarine;
+    font-size: 24px;
+    background-color: chartreuse;
     transition: .3s;
     margin: 5px;
+    padding: 12px;
 }
 input:hover{
     background-color: blanchedalmond;
