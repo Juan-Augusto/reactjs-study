@@ -1,4 +1,6 @@
 import { useState } from "react";
+// import { useParams } from "react-router-dom";
+
 import "./Style.css"
 const Contador = () => {
     const [numero, setNumero] = useState(0);
@@ -10,9 +12,10 @@ const Contador = () => {
         setNumero(numero + 1);
 
     };
-
+// const params = useParams()
     return (
         <div className="base-component">
+            {/* <h1 style={{color: "white"}}>Route (From URL paramaters): {params.slug}</h1> */}
             <div className="counter-frame">
                 <h1>Counter</h1>
                 <div className="cont-format">
@@ -31,14 +34,14 @@ const Contador = () => {
                         <p className="card-text">
                             Main useState structure:
                         </p>
-                        <p>
-                            const [variable, variableSetter] = useState(initialValue)
-                        </p>
-                        <p>
+                        <code>
+                            const [variable, variableSetter] = useState(initialValue) <br />
+                        </code>
+                        <code>
                             const (clickingFunction) (
                                 variableSetter(functionRule)
                             )
-                        </p>
+                        </code>
                     </div>
                     <h3>Then, atribute the function to each button</h3>
                     <a href={'https://en.reactjs.org/docs/hooks-reference.html#usestate'} target='blank'><button>Documentation</button></a>

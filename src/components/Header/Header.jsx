@@ -3,8 +3,10 @@ import { Link } from "react-router-dom";
 
 
 export const NavbarHeader = () => {
+    ;
     return (
         <header className="flex justify-center" style={{fontFamily: 'Source Code Pro'}}>
+            
             <nav className="navbar navbar-expand-lg navbar-light">
                 <div className="container-fluid">
                     <Link className='navbar-brand' to={'/'}>Home</Link>
@@ -15,7 +17,7 @@ export const NavbarHeader = () => {
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item dropdown">
                         <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Exercícios executados
+                            Tasks completed
                         </a>
                         <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                             {

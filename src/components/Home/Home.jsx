@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './StyleHome.css';
 export const Home = () => {
     return(
-        <div className='flex justify-center items-center flex-col p-5' style={{backgroundColor: '#4F4F4F'}}>
+        <div className='flex justify-center items-center flex-col p-5' style={{backgroundColor: '#222222'}}>
             <div className="flex justify-center">
                 <h1 className='main-title'>Hey, my name is Juan Augusto, I'm glad you're here.</h1>
             </div>

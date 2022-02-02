@@ -1,11 +1,11 @@
 .list-ex1{
     list-style: none;
     width: max-content;
-
+    margin: 24px;
     
 }
 .list-item1{
-    background-color: aqua;
+    background-color: rgb(12, 207, 207);
     border: 1px solid black;
     text-align: center;
     padding: 3px;

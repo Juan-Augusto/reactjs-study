@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from "uuid";
 
 const initialState = [];
 const reducerList = (state, action) => {
-  switch (action.type) {
+  switch (action.type) { 
     case "ADD":
       if (action.payload?.name) {
         const newState = [...state];
@@ -26,7 +26,6 @@ const reducerList = (state, action) => {
       let newState = [...state];
       state = state.sort((a, b) => (a.name > b.name ? 1 : -1));
       return newState;
-      break;
   }
   return state;
 };

@@ -21,7 +21,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={ <Home /> } />
         <Route path="/contador" element={ <Contador /> } />
-        <Route path='/input' element={ <Input /> }/>
+        <Route path='/input' element={ <Input /> }/> 
         <Route path='/lista' element={ <ListRender /> }/>
         <Route path="/lista-reducer" element={ <PeopleList />}/>
         <Route path="/extailwind" element={ <TailwindComponent /> }/>
@@ -31,7 +31,7 @@ const App = () => {
         <Route path="/movie-request" element={ <MovieRequest /> }/>
         <Route path="/jsonplaceholder" element={ <JSONPlaceholder /> }/>
         <Route path="/contador-reducer" element={ <ReducerCounter /> }/>
-        <Route path="*" element={<NotFoundPage404 />}/>
+        <Route path="/*" element={<NotFoundPage404 />}/>
       </Routes>
       <Footer/>
     </main>
