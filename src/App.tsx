@@ -14,13 +14,18 @@ import { NotFoundPage404 } from "./components/NotFound/NotFoundPage";
 import { NavbarHeader } from "./components/Header/Header";
 import { Home } from "./components/Home/Home";
 import { Footer } from "./components/Footer/Footer";
+import { RequireAuth } from "./components/RequireAuth/RequireAuthentication";
 const App = () => {
   return (
     <main>
       <NavbarHeader />
       <Routes>
         <Route path="/" element={ <Home /> } />
-        <Route path="/contador" element={ <Contador /> } />
+        <Route path="/contador" element={ 
+          <RequireAuth>
+            <Contador />
+          </RequireAuth> 
+          } />
         <Route path='/input' element={ <Input /> }/> 
         <Route path='/lista' element={ <ListRender /> }/>
         <Route path="/lista-reducer" element={ <PeopleList />}/>
