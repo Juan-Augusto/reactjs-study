@@ -26,8 +26,8 @@ export const NavbarHeader = () => {
                         </a>
                         <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                             {
-                                Links.map((item, key) => (
-                                    <Link to={`${item.link}`}><li className="dropdown-item" key={key}>{`${item.name}`}</li></Link>
+                                Links.map((item, navKey) => (
+                                    <Link to={`${item.link}`}><li className="dropdown-item" key={navKey}>{`${item.name}`}</li></Link>
                                 ))
                             }
                         </ul>

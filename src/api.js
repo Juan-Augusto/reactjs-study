@@ -11,6 +11,34 @@ export const api = {
         // let json = await response.json();
         // return json;
     },
+    getAllAlbums: async (id) => {
+      let response = await axiosInstance.get('/albums')
+      return response.data;
+      // let response = await fetch(`${baseURL}/posts`);
+      // let json = await response.json();
+      // return json;
+    },
+    getAlbum: async (id) => {
+      let response = await axiosInstance.get(`/albums/${id}`)
+      return response.data;
+      // let response = await fetch(`${baseURL}/posts`);
+      // let json = await response.json();
+      // return json;
+    },
+    getAllPhotosAlbum: async (id) => {
+      let response = await axiosInstance.get(`/albums/${id}/photos`)
+      return response.data;
+      // let response = await fetch(`${baseURL}/posts`);
+      // let json = await response.json();
+      // return json;
+    },
+    getPhoto: async (id) => {
+      let response = await axiosInstance.get(`/photos/${id}`)
+      return response.data;
+      // let response = await fetch(`${baseURL}/posts`);
+      // let json = await response.json();
+      // return json;
+    },
     addNewPost: async (title, body, userId) => {
         let response = await axiosInstance.post('/posts', {
           title, body, userId

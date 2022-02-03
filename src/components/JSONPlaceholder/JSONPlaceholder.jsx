@@ -35,7 +35,7 @@ const JSONPlaceholder = () => {
       </div>
       <div>
         {posts.map((item, index) => (
-          <PostItem data={item} />
+          <PostItem data={item} key={index}/>
         ))}
       </div>
       {!loading && posts.length === 0 && (
