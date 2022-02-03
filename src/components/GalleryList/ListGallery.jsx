@@ -30,7 +30,9 @@ export const GalleryList = () => {
                         {
                             albums.map((album, albumKey) => (
                                 <Link to={`/gallery/${album.id}`}> 
-                                    <li className="request-item p-3 m-4" key={albumKey} style={{border: '1px solid black', margin: '10px'}}><h2>{album.title}</h2></li>
+                                    <li className="request-item p-3 m-4" key={albumKey}>
+                                        <h2>{album.title}</h2>
+                                    </li>
                                 </Link>
                             ))
                         }

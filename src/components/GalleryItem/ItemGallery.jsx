@@ -31,7 +31,7 @@ export const GalleryItem = () => {
             {
                 !loading &&
                 photoInfo && (
-                <div className="m-5 flex"> 
+                <div className="m-5 flex justify-evenly"> 
                     <h1> Title: {photoInfo.title.toUpperCase()}</h1>
                     <img className="item-photo" src={photoInfo.url} alt={photoInfo.title} />
                 </div>

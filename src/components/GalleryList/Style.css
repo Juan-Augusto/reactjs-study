@@ -4,6 +4,8 @@
     box-shadow: 8px 8px 8px #222222;
     border-radius: 5px;
     transition: .2s;
+    border: 1px solid black;
+    margin: 10px;
 }
 .request-item:hover{
     box-shadow: 2px 2px 2px #222222;
