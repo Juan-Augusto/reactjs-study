@@ -1,12 +1,17 @@
 import Links from "../Pages/PageLinks";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 
 
 export const NavbarHeader = () => {
-    ;
+    const navigate = useNavigate();
+    const handleBackButton = () => {
+        navigate(-1)
+    };
     return (
-        <header className="flex justify-center" style={{fontFamily: 'Source Code Pro'}}>
-            
+        <header className="flex justify-center" style={{fontFamily: 'Source Code Pro', borderBottom: '1px solid black'}}>
+            <button onClick={handleBackButton}>Go back</button>
             <nav className="navbar navbar-expand-lg navbar-light">
                 <div className="container-fluid">
                     <Link className='navbar-brand' to={'/'}>Home</Link>

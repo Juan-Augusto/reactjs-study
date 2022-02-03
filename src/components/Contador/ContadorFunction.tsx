@@ -13,6 +13,7 @@ const Contador = () => {
 
     };
 // const params = useParams()
+
     return (
         <div className="base-component">
             {/* <h1 style={{color: "white"}}>Route (From URL paramaters): {params.slug}</h1> */}

@@ -13,7 +13,7 @@ const ExhibitionCondition = () =>{
             <aside>
                 {
                 show === true && 
-                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum esse ea quibusdam earum repudiandae! Tempora ipsum nihil facilis laboriosam, in magni ad dignissimos debitis iste, illum vero. Ducimus, magni consequuntur.</h4>
+                <h4 className="p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum esse ea quibusdam earum repudiandae! Tempora ipsum nihil facilis laboriosam, in magni ad dignissimos debitis iste, illum vero. Ducimus, magni consequuntur.</h4>
                 }
             </aside>
         </div>
