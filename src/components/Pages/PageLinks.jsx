@@ -40,6 +40,10 @@ const Links = [
         'link': "contador-reducer" 
     },
     { 
+        'name': "Requested List", 
+        'link': "gallery" 
+    },
+    { 
         'name': "Error page", 
         'link': "error" 
     },
