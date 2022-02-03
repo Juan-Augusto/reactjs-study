@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { api } from "../../api";
+import './Style.css'
 
 export const GalleryItems = () => {
     const params = useParams();
@@ -37,13 +38,13 @@ export const GalleryItems = () => {
                 {!loading && items.length>0 &&
                 <div className="m-2">
                     <h1>Album name: {galleryInfo.title.toUpperCase()}</h1>
-                    <ul className="grid grid-cols-5 gap-2 m-7">
+                    <ul className="grid grid-cols-5 gap-3 m-7">
                         {
                             items.map((galleryItems, galleryItemsKey) => (
                                 <Link to={`/photo/${galleryItems.id}`}>
-                                    <li key={galleryItemsKey} className="p-2 flex flex-col justify-center" style={{border: '2px solid black'}}>
+                                    <li key={galleryItemsKey} className="p-3 flex flex-col justify-center gallery-items" style={{border: '2px solid black'}}>
                                         <img src={galleryItems.thumbnailUrl} alt={galleryItems.title}/>
-                                        <h2>Tilte: {galleryItems.title}</h2>
+                                        
                                     </li>
                                 </Link>
                             ))

@@ -1,0 +1,10 @@
+.gallery-items{
+    border-radius: 10px;
+    transition: .3s;
+    box-shadow: 8px 8px 10px #8d8d8d;
+}
+.gallery-items:hover{
+    transform: translateY(-8px);
+    box-shadow: 2px 2px 5px #8d8d8d;
+
+}

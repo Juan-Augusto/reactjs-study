@@ -1,0 +1,13 @@
+.request-item{
+    background-color: #222222;
+    color: #FFFFFF;
+    box-shadow: 8px 8px 8px #222222;
+    border-radius: 5px;
+    transition: .2s;
+}
+.request-item:hover{
+    box-shadow: 2px 2px 2px #222222;
+    background-color: #FFFFFF;
+    color: #222222;
+
+}

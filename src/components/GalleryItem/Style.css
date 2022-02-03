@@ -1,0 +1,10 @@
+.item-photo{
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 8px 8px 10px #838383;
+    transition: .3s;
+}
+.item-photo:hover{
+    box-shadow: 2px 2px 5px #838383;
+
+}

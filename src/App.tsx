@@ -1,6 +1,6 @@
 import { NavbarHeader } from "./components/Header/Header";
 import { Footer } from "./components/Footer/Footer";
-import { RouteListRoutes, RouteListUseRoutes } from "./components/Routes/RouteList";
+import { RouteListUseRoutes } from "./components/Routes/RouteList";
 
 
 const App = () => {
@@ -8,7 +8,6 @@ const App = () => {
     <main>
       <NavbarHeader />
         <RouteListUseRoutes />
-        <RouteListRoutes />
       <Footer/>
     </main>
   );

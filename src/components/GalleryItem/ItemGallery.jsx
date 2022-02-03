@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { api } from "../../api";
+import './Style.css'
 export const GalleryItem = () => {
   const params = useParams();
 
@@ -30,9 +31,9 @@ export const GalleryItem = () => {
             {
                 !loading &&
                 photoInfo && (
-                <div className="m-5"> 
-                    <h1>{photoInfo.title.toUpperCase()}</h1>
-                    <img style={{border: '1px solid black'}} src={photoInfo.url} alt={photoInfo.title} />
+                <div className="m-5 flex"> 
+                    <h1> Title: {photoInfo.title.toUpperCase()}</h1>
+                    <img className="item-photo" src={photoInfo.url} alt={photoInfo.title} />
                 </div>
             )}
       </div>
