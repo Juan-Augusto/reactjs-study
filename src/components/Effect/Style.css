@@ -1,0 +1,22 @@
+.main-effect{
+    background-color: #222222;
+}
+.input-useEffect{
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    margin: 24px;
+    transition: .3s;
+    padding: 8px;
+}
+.input-useEffect:hover{
+    background-color: #6b6b6b;
+    color: #ffffff;
+}
+.effect-reciver{
+    background-color: #FFFFFF;
+    margin: 24px;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    padding: 8px;
+
+}

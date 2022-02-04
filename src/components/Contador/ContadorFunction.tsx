@@ -26,30 +26,30 @@ const Contador = () => {
                 </div>
             </div>
             <div className="card text-center">
-            <div className="card-header">
-                <h1>Simple react component with a counting function</h1>
-            </div>
-                <div className="card-body">
-                    <h2 className="card-title">This was made with the use of the useState react hook</h2>
-                    <div className="useState-structure">
-                        <p className="card-text">
-                            Main useState structure:
-                        </p>
-                        <code>
-                            const [variable, variableSetter] = useState(initialValue) <br />
-                        </code>
-                        <code>
-                            const (clickingFunction) (
-                                variableSetter(functionRule)
-                            )
-                        </code>
+                <div className="card-header">
+                    <h1>Simple react component with a counting function</h1>
+                </div>
+                    <div className="card-body">
+                        <h2 className="card-title">This was made with the use of the useState react hook</h2>
+                        <div className="useState-structure">
+                            <p className="card-text">
+                                Main useState structure:
+                            </p>
+                            <code>
+                                const [variable, variableSetter] = useState(initialValue) <br />
+                            </code>
+                            <code>
+                                const (clickingFunction) (
+                                    variableSetter(functionRule)
+                                )
+                            </code>
+                        </div>
+                        <h3>Then, atribute the function to each button</h3>
+                        <a href={'https://en.reactjs.org/docs/hooks-reference.html#usestate'} target='blank'><button>Documentation</button></a>
                     </div>
-                    <h3>Then, atribute the function to each button</h3>
-                    <a href={'https://en.reactjs.org/docs/hooks-reference.html#usestate'} target='blank'><button>Documentation</button></a>
-                </div>
-                <div className="card-footer text-muted">
-                    
-                </div>
+                    <div className="card-footer text-muted">
+                        
+                    </div>
                 </div>
         </div>
     )
