@@ -18,6 +18,10 @@ h2{
     font-family: 'Source Code Pro', monospace;
 
 }
+.input-reciver{
+    border: 1px solid #FFFFFF;
+    margin: 10px;
+}
 input{
     font-size: 24px;
     background-color: chartreuse;

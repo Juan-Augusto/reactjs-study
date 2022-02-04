@@ -1,6 +1,7 @@
 import { useReducer } from "react";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
+import './Style.css'
 
 const initialState = [];
 const reducerList = (state, action) => {
@@ -71,12 +72,13 @@ const PeopleList = () => {
         <button onClick={handleOrderButton}>Ordenar</button>
       </div>
       <div className="flex justify-center">
-        <ul className="flex items-center flex-col">
-          {list.map((item, index) => (
-            <li key={index}>
-              {item.name}
-              <button onClick={() => deletePerson(item.id)}>DELETAR</button>
-            </li>
+        <ul className="flex flex-col">
+          {
+            list.map((item, index) => (
+              <li key={index} className="list-reducer-item">
+                <h2>{item.name}</h2>
+                <button onClick={() => deletePerson(item.id)}>DELETAR</button>
+              </li>
           ))}
         </ul>
       </div>

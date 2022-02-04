@@ -1,0 +1,14 @@
+.list-reducer-item{
+    display: flex;
+    align-items: baseline;
+    border: 1px solid #222222;
+    padding: 8px;
+    margin: 10px;
+    transition: .3s;
+    justify-content: space-evenly;
+}
+.list-reducer-item:hover{
+    background-color: #222222;
+    color: #FFFFFF;
+    transform: translateY(-8px);
+}
